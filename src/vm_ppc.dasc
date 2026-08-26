@@ -5803,6 +5803,7 @@ static void build_ins(BuildCtx *ctx, BCOp op, int defop)
     |  lwz RB, WORD_HI(TMP3)
     |.else
     |  add CARG3, TMP2, TMP3
+    |  lwz RB, WORD_HI(CARG3)
     |  lwz CARG1, 0(CARG3)
     |  lwz CARG2, 4(CARG3)
     |   add NODE:TMP3, TMP2, TMP3
